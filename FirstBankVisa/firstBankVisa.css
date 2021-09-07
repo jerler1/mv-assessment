@@ -165,6 +165,11 @@ p {
     font-size: 1rem;
   }
 }
+@media only screen and (max-width: 350px) {
+  .heroContainer div .asideInfo h1 {
+    font-size: 0.75rem;
+  }
+}
 .heroContainer div .asideInfo h3 {
   margin-top: 2%;
 }
@@ -181,6 +186,11 @@ p {
 @media only screen and (max-width: 575px) {
   .heroContainer div .asideInfo h3 {
     font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .heroContainer div .asideInfo h3 {
+    font-size: 0.5rem;
   }
 }
 .heroContainer div .asideInfo figure .visaImage {
@@ -201,6 +211,12 @@ p {
 @media only screen and (max-width: 575px) {
   .heroContainer div .asideInfo figure .visaImage {
     width: 100px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .heroContainer div .asideInfo figure .visaImage {
+    width: 75px;
     height: auto;
   }
 }

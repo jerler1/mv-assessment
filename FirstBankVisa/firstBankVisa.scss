@@ -34,6 +34,9 @@
         @media only screen and (max-width: 575px) {
           font-size: 1rem;
         }
+        @media only screen and (max-width: 350px) {
+            font-size: 0.75rem;
+          }
       }
       h3 {
         margin-top: 2%;
@@ -46,6 +49,9 @@
         @media only screen and (max-width: 575px) {
           font-size: 0.75rem;
         }
+        @media only screen and (max-width: 350px) {
+            font-size: 0.5rem;
+          }
       }
       figure {
         .visaImage {
@@ -58,6 +64,9 @@
           }
           @media only screen and (max-width: 575px) {
             @include dimensions(100px, auto);
+          }
+          @media only screen and (max-width: 350px) {
+            @include dimensions(75px, auto);
           }
         }
       }
