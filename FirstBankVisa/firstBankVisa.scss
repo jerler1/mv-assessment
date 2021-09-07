@@ -83,6 +83,7 @@
     @media only screen and (max-width: 1100px) {
       @include flex(column, space-evenly, center);
       @include dimensions(100%, auto);
+      margin: 5% 0%;
     }
     .thingToBuy {
       @include flex(column, flex-start, center);
@@ -109,6 +110,7 @@
   .articleNoWorries {
     @include dimensions(100%, auto);
     @include flex(row, center, center);
+    margin: 3% 0%;
     .noWorriesWrapper {
       @include dimensions(40%, auto);
       @media only screen and (max-width: 1100px) {
@@ -116,8 +118,50 @@
       }
       @include flex(column, space-evenly, center);
       text-align: center;
+      @media only screen and (max-width: 1100px) {
+        .noWorriesHeader {
+          margin: 4% 0%;
+        }
+      }
       .noWorriesText {
         margin: 4% 0%;
+      }
+    }
+  }
+}
+.callToAction {
+  @include dimensions(100%, auto);
+  @include flex(row, center, center);
+  background-color: orange;
+  .actionPhotoContainer {
+    @include dimensions(30%, auto);
+    .actionPhoto {
+      @include dimensions(100%, auto);
+    }
+  }
+  .actionAsideContainer {
+    @include dimensions(40%, 100%);
+    @include flex(column, center, center);
+    min-height: 100%;
+    .actionAside {
+      @include dimensions(70%, 40%);
+      @include flex(row, center, center);
+      text-align: center;
+      min-height: 100%;
+      @media only screen and (max-width: 1100px) {
+        width: 85%;
+    }
+      p {
+        font-family: "MyriadPro-Light";
+        font-size: 2.8rem;
+        color: rgba(26, 31, 113, 255);
+        line-height: 120%;
+        @media only screen and (max-width: 1200px) {
+            font-size: 1.5rem;
+        }
+        @media only screen and (max-width: 800px) {
+            font-size: 1rem;
+        }
       }
     }
   }
