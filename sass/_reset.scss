@@ -46,3 +46,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+// My additions
+ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  *,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
