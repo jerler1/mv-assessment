@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "sass": "^1.39.0",
-    "harp": "*"
+    "sass": "^1.39.0"
   }
 }
