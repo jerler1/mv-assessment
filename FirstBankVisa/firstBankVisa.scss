@@ -1,3 +1,106 @@
 @import "../sass/mixins";
 @import "../sass/reset";
 @import "../sass/layout.scss";
+
+.heroContainer {
+  @include dimensions(100%, 40%);
+  div {
+    @include dimensions(100%, 40%);
+    position: relative;
+    figure {
+      .heroImage {
+        width: 100%;
+        object-fit: cover;
+        border-top: 15px solid orange;
+      }
+    }
+    .asideInfo {
+      @include flex(column, flex-start, flex-start);
+      position: absolute;
+      background-color: transparent;
+      left: 4%;
+      top: 8%;
+      @media only screen and (max-width: 1100px) {
+        top: 15%;
+      }
+      h1 {
+        margin-bottom: 4%;
+        @media only screen and (max-width: 1100px) {
+          font-size: 2rem;
+        }
+        @media only screen and (max-width: 800px) {
+            font-size: 1.5rem;
+          }
+        @media only screen and (max-width: 575px) {
+          font-size: 1rem;
+        }
+      }
+      h3 {
+        margin-top: 2%;
+        @media only screen and (max-width: 1100px) {
+          font-size: 1.5rem;
+        }
+        @media only screen and (max-width: 800px) {
+            font-size: 1rem;
+          }
+        @media only screen and (max-width: 575px) {
+          font-size: 0.75rem;
+        }
+      }
+      figure {
+        .visaImage {
+          margin-top: 10%;
+          @media only screen and (max-width: 1100px) {
+            @include dimensions(200px, auto);
+          }
+          @media only screen and (max-width: 800px) {
+            @include dimensions(150px, auto);
+          }
+          @media only screen and (max-width: 575px) {
+            @include dimensions(100px, auto);
+          }
+        }
+      }
+    }
+  }
+}
+.informationContainer {
+  @include flex(column, center, center);
+  @include dimensions(100%, auto);
+  .articleRelyOn {
+    @include flex(column, space-evenly, center);
+    @include dimensions(60%, auto);
+    text-align: center;
+    margin-top: 3%;
+    .relyOnText {
+      margin-top: 2%;
+    }
+  }
+  .articleThingsToBuy {
+    @include flex(row, space-evenly, center);
+    @include dimensions(80%, auto);
+    text-align: center;
+    @include for-size(phone) {
+      @include flex(column, space-evenly, center);
+      @include dimensions(100%, auto);
+    }
+    .thingToBuy {
+      @include flex(column, flex-start, center);
+      @include dimensions(100%, auto);
+      margin: 5% 0%;
+      figure {
+        @include dimensions(80px, 80px);
+        .iconTTB {
+          @include dimensions(100%, 100%);
+        }
+      }
+      .headerTTB {
+        margin-top: 2%;
+        margin-bottom: 1%;
+      }
+      .textTTB {
+        width: 50%;
+      }
+    }
+  }
+}
